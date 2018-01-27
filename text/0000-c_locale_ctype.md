@@ -38,7 +38,7 @@ int isxdigit(int);
 ```
 
 ## Character case mapping functions
-[Character case mapping functions]
+[Character case mapping functions]: #character-case-mapping-functions
 
 ```C
 int tolower(int);
@@ -111,3 +111,4 @@ None
 introduces the `locale.h`?
 * [ ] How do we deal with the undefined behaviour for invalid values.
 * [ ] Should this RFC mandate checking for `EOF` right now for the functions.
+
