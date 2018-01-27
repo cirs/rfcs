@@ -6,13 +6,13 @@
 # Summary
 [Summary]: #summary
 
-Introduce the functions given in §7.4 Character handling &amp;ctype>.
+Introduce the functions given in §7.4 Character handling &amp;ctype.h>.
 
 # Motivation
 [Motivation]: #motivation
 
 The library needs to get going from somewhere and `<ctype.h>` functions are
-easier to implement, for the `"C"` locale.
+easiest to implement, for the `"C"` locale.
 
 # Guide-level explanation
 [Guide-level explanation]: #guide-level-explanation
@@ -44,6 +44,8 @@ int isxdigit(int);
 int tolower(int);
 int toupper(int);
 ```
+
+In addition the features `ctype` and `c_locale_ctype` are also introduced.
 
 # Reference-level explanation
 [Refernce-level explanation]: #reference-level-explanation
@@ -94,6 +96,24 @@ Character Range | `isalnum` | `isalpha` | `isblank` | `iscntrl` | `isdigit` | `i
  `0x7B`..`0x7E` | 0         | 0         | 0         | 0         | 0         | 1         | 0         | 1         | 1         | 0         | 0         | 0
  `0x7F`         | 0         | 0         | 0         | 1         | 0         | 0         | 0         | 0         | 0         | 0         | 0         | 0
 
+
+## Features
+[Features]: #features
+
+This RFC also introduces two features to be used as configuration options:
+
+### `ctype`
+[`ctype`]: #ctype
+
+This feature brings `<ctype.h>` functions into scope. This however feature
+does not specify behaviour of the functions.
+
+### `c_locale_ctype`
+[`c_locale_ctype`]: #c_locale_ctype
+
+This feature allows running `<ctype.h>` with `"C"` locale, as defined above.
+This feature depends on the feature [`ctype`].
+
 # Drawbacks
 [Drawbacks]: #drawbacks
 
@@ -111,4 +131,3 @@ None
 introduces the `locale.h`?
 * [ ] How do we deal with the undefined behaviour for invalid values.
 * [ ] Should this RFC mandate checking for `EOF` right now for the functions.
-
