@@ -118,7 +118,7 @@ This RFC also introduces two features to be used as configuration options:
 ### `ctype`
 [`ctype`]: #ctype
 
-This feature brings `<ctype.h>` functions into scope. This however feature
+This feature brings `<ctype.h>` functions into scope. This feature however
 does not specify behaviour of the functions.
 
 ### `c_locale_ctype`
