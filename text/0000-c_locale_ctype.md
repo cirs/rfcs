@@ -45,6 +45,9 @@ int tolower(int);
 int toupper(int);
 ```
 
+## Configuration
+[Configuration]: #configuration
+
 In addition the features `ctype` and `c_locale_ctype` are also introduced.
 
 # Reference-level explanation
