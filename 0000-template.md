@@ -46,3 +46,8 @@ Why should we *not* do this?
 
 What parts of the design do you expect to resolve through the RFC process
 before this gets merged?
+
+# References
+[References]: #references
+
+External sources that were used while designing this RFC.
