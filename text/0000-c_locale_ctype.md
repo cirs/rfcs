@@ -78,8 +78,8 @@ under standard characters:
 > `A` `B` `C` `D` `E` `F`
 > `a` `b` `c` `d` `e` `f`
 
-## Character Classification Set
-[Character Classification Set]: #character-classification-set
+## Character Classification Function Set
+[Character Classification Function Set]: #character-classification-function-set
 
  Character Range | `isalnum` | `isalpha` | `isblank` | `iscntrl` | `isdigit` | `isgraph` | `islower` | `isprint` | `ispunct` | `isspace` | `isupper` | `isxdigit`
 :---------------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:----------:
@@ -99,8 +99,8 @@ under standard characters:
  `0x7B`..`0x7E`  | 0         | 0         | 0         | 0         | 0         | 1         | 0         | 1         | 1         | 0         | 0         | 0
  `0x7F`          | 0         | 0         | 0         | 1         | 0         | 0         | 0         | 0         | 0         | 0         | 0         | 0
 
-## Character Case Mapping Set
-[Character Case Mapping Set]: #character-case-mapping-set
+## Character Case Mapping Function Set
+[Character Case Mapping Function Set]: #character-case-mapping-function-set
 
  Character Range | `tolower` | `toupper`
 :---------------:|:---------:|:---------:
