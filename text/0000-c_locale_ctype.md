@@ -48,7 +48,7 @@ int toupper(int);
 ## Configuration
 [Configuration]: #configuration
 
-In addition the features `ctype` and `c_locale_ctype` are also introduced.
+In addition the features `ctype_h` and `c_locale_ctype` are also introduced.
 
 # Reference-level explanation
 [Refernce-level explanation]: #reference-level-explanation
@@ -115,8 +115,8 @@ under standard characters:
 
 This RFC also introduces two features to be used as configuration options:
 
-### `ctype`
-[`ctype`]: #ctype
+### `ctype_h`
+[`ctype_h`]: #ctype_h
 
 This feature brings `<ctype.h>` functions into scope. This feature however
 does not specify behaviour of the functions.
@@ -125,7 +125,7 @@ does not specify behaviour of the functions.
 [`c_locale_ctype`]: #c_locale_ctype
 
 This feature allows running `<ctype.h>` with `"C"` locale, as defined above.
-This feature depends on the feature [`ctype`].
+This feature depends on the feature [`ctype_h`].
 
 # Drawbacks
 [Drawbacks]: #drawbacks
